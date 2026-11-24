@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>THE DETAILING BOYS AHMEDABAD | Premium Car Detailing</title>
+
+<meta name="description" content="The Detailing Boys Ahmedabad. Premium ceramic coating, PPF, graphene coating, car detailing and paint protection services.">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --gold: #d6ad55;
+    --lightgold: #f5d990;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #050505;
+    border-bottom: 1px solid var(--gold);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    display: block;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 7px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: linear-gradient(135deg, #f5d990, #b88629);
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background:
+    linear-gradient(90deg, rgba(0,0,0,.95), rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=90") center/cover;
+}
+
+.hero-content {
+    padding: 90px 0;
+    max-width: 650px;
+}
+
+.hero h3 {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    line-height: 1.05;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero p {
+    color: #ddd;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.section {
+    padding: 85px 0;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 15px;
+}
+
+.heading h2 span {
+    color: var(--gold);
+}
+
+.heading p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1b1b1b, #101010);
+    border: 1px solid #51401e;
+    padding: 30px 23px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+}
+
+.card .icon {
+    font-size: 35px;
+    color: var(--gold);
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    color: var(--gold);
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.card p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.about {
+    background: #111;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-image {
+    min-height: 400px;
+    background: url("https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1200&q=85") center/cover;
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text h2 span {
+    color: var(--gold);
+}
+
+.about-text p {
+    color: #aaa;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+    line-height: 2.5;
+    color: #ddd;
+}
+
+.about-text li::before {
+    content: "✓ ";
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.team {
+    text-align: center;
+    background:
+    linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.92)),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85") center/cover;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.team h2 {
+    font-size: clamp(30px, 5vw, 45px);
+    margin-bottom: 15px;
+}
+
+.team h2 span {
+    color: var(--gold);
+}
+
+.team p {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.team-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.team-numbers a {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 15px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-numbers a:hover {
+    background: var(--gold);
+    color: black;
+}
+
+.contact {
+    background: #111;
+}
+
+.contact-box {
+    background: #080808;
+    border: 1px solid var(--gold);
+    padding: 35px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: var(--gold);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    color: #bbb;
+    line-height: 2;
+    overflow-wrap: anywhere;
+}
+
+.contact-box a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+footer {
+    background: #030303;
+    border-top: 1px solid var(--gold);
+    text-align: center;
+    padding: 30px 15px;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 2;
+}
+
+footer strong {
+    color: var(--gold);
+}
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #20bd65;
+    color: white;
+    padding: 17px;
+    border-radius: 50%;
+    font-size: 23px;
+    text-decoration: none;
+    z-index: 200;
+}
+
+@media(max-width:850px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:550px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-content {
+        padding: 65px 0;
+    }
+
+    .team-numbers {
+        flex-direction: column;
+    }
+
+    .team-numbers a {
+        display: block;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+
+<div class="logo">
+THE DETAILING BOYS
+<span>AHMEDABAD</span>
+</div>
+
+<div>
+<a href="#home">HOME</a>
+<a href="#services">SERVICES</a>
+<a href="#about">ABOUT</a>
+<a href="#team">OUR TEAM</a>
+<a href="#contact">CONTACT</a>
+</div>
+
+<a class="button" href="https://wa.me/916351098181">
+BOOK NOW
+</a>
+
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-content">
+
+<h3>PREMIUM CAR DETAILING STUDIO</h3>
+
+<h1>
+THE DETAILING BOYS
+<span>AHMEDABAD</span>
+</h1>
+
+<p>
+Because your car deserves the best.
+Experience premium automotive detailing, advanced paint protection and luxury car care.
+</p>
+
+<a href="https://wa.me/916351098181" class="button">
+BOOK YOUR SERVICE →
+</a>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+
+<div class="heading">
+<h2>OUR <span>PREMIUM SERVICES</span></h2>
+<p>Professional car care. Premium protection. Exceptional shine.</p>
+</div>
+
+<div class="services">
+
+<div class="card">
+<div class="icon">✦</div>
+<h3>Ceramic Coating</h3>
+<p>Premium paint protection with enhanced gloss and easier maintenance.</p>
+</div>
+
+<div class="card">
+<div class="icon">◈</div>
+<h3>PPF - Paint Protection Film</h3>
+<p>Transparent film protection to help protect vehicle paint from everyday road damage.</p>
+</div>
+
+<div class="card">
+<div class="icon">✧</div>
+<h3>Graphene Coating</h3>
+<p>Advanced coating technology for a smooth finish and enhanced surface protection.</p>
+</div>
+
+<div class="card">
+<div class="icon">✥</div>
+<h3>Paint Correction</h3>
+<p>Professional polishing to improve the appearance of swirl marks and paint defects.</p>
+</div>
+
+<div class="card">
+<div class="icon">◉</div>
+<h3>Interior Deep Cleaning</h3>
+<p>Detailed cleaning of seats, carpets, dashboard and interior surfaces.</p>
+</div>
+
+<div class="card">
+<div class="icon">◇</div>
+<h3>Exterior Detailing</h3>
+<p>Premium exterior cleaning and finishing for your vehicle.</p>
+</div>
+
+<div class="card">
+<div class="icon">⌁</div>
+<h3>Engine Bay Cleaning</h3>
+<p>Careful cleaning of accessible engine bay surfaces.</p>
+</div>
+
+<div class="card">
+<div class="icon">✦</div>
+<h3>Headlight Restoration</h3>
+<p>Improve the appearance of dull and hazy headlight lenses.</p>
+</div>
+
+<div class="card">
+<div class="icon">◈</div>
+<h3>Alloy & Tyre Detailing</h3>
+<p>Professional wheel cleaning and tyre finishing.</p>
+</div>
+
+<div class="card">
+<div class="icon">✧</div>
+<h3>Premium Car Wash</h3>
+<p>Careful washing and drying for a clean and fresh vehicle.</p>
+</div>
+
+<div class="card">
+<div class="icon">◇</div>
+<h3>Windshield Treatment</h3>
+<p>Glass cleaning and optional water-repellent protection.</p>
+</div>
+
+<div class="card">
+<div class="icon">✥</div>
+<h3>Full Car Detailing</h3>
+<p>Complete interior and exterior detailing packages.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section about" id="about">
+<div class="container about-content">
+
+<div class="about-image"></div>
+
+<div class="about-text">
+
+<h2>ABOUT <span>THE DETAILING BOYS</span></h2>
+
+<p>
+We believe every car deserves premium care.
+The Detailing Boys Ahmedabad focuses on automotive appearance, paint protection and professional detailing solutions.
+</p>
+
+<ul>
+<li>Premium automotive care</li>
+<li>Ceramic and graphene coating</li>
+<li>Paint protection film solutions</li>
+<li>Interior and exterior detailing</li>
+<li>Customer-focused service</li>
+</ul>
+
+<br>
+
+<a href="#team" class="button">TALK TO OUR TEAM →</a>
+
+</div>
+</div>
+</section>
+
+<section class="section team" id="team">
+<div class="container">
+
+<h2>TALK TO <span>OUR TEAM</span></h2>
+
+<p>
+Have questions about ceramic coating, PPF or car detailing?
+Our team is ready to help you choose the right service.
+</p>
+
+<div class="team-numbers">
+
+<a href="tel:+916351098181">
+☎ 6351098181
+</a>
+
+<a href="tel:+916356098181">
+☎ 6356098181
+</a>
+
+</div>
+
+<a class="button" href="https://wa.me/916351098181?text=Hello%20The%20Detailing%20Boys%2C%20I%20want%20to%20talk%20to%20your%20team.">
+CHAT WITH OUR TEAM ON WHATSAPP →
+</a>
+
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="container">
+
+<div class="heading">
+<h2>GET IN <span>TOUCH</span></h2>
+<p>We would love to hear from you.</p>
+</div>
+
+<div class="contact-box">
+
+<h3>THE DETAILING BOYS AHMEDABAD</h3>
+
+<p>
+📍 Ahmedabad, Gujarat, India
+<br>
+
+📞 <a href="tel:+916351098181">6351098181</a>
+<br>
+
+📞 <a href="tel:+916356098181">6356098181</a>
+<br>
+
+✉ <a href="mailto:thedetailingboysahmedabad@gmail.com">
+thedetailingboysahmedabad@gmail.com
+</a>
+
+</p>
+
+<div class="contact-buttons">
+
+<a class="button" href="tel:+916351098181">CALL NOW</a>
+
+<a class="button" href="mailto:thedetailingboysahmedabad@gmail.com">
+SEND EMAIL
+</a>
+
+<a class="button" href="https://wa.me/916351098181">
+WHATSAPP
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+
+<strong>THE DETAILING BOYS AHMEDABAD</strong>
+
+<br>
+
+DRIVE CLEAN • DRIVE PREMIUM
+
+<br>
+
+© 2026 THE DETAILING BOYS. ALL RIGHTS RESERVED.
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/916351098181"
+target="_blank"
+aria-label="WhatsApp">
+✆
+</a>
+
+</body>
+</html>
